@@ -8,7 +8,6 @@ CREATE TABLE sale(
 CREATE TABLE details(
 	invoice 	VARCHAR(50) PRIMARY KEY,
 	item_num 	INT NOT NULL,
-	volume 		INT NOT NULL,
 	quantity 	INT NOT NULL,
 	cost 		DECIMAL(10, 2) NOT NULL,
 	retail 		DECIMAL(10, 2) NOT NULL
@@ -28,7 +27,8 @@ CREATE TABLE store_location(
 
 CREATE TABLE description(
 	item_num 	INT PRIMARY KEY,
-	item_desc 	VARCHAR(50) NOT NULL
+	item_desc 	VARCHAR(50) NOT NULL,
+	volume 	INT NOT NULL,
 );
 
 CREATE TABLE vendor(
